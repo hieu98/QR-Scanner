@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">QR Scanner</string>
+    <string name="app_file_provider" >com.hdt.qrscanner</string>
 </resources>

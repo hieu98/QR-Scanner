@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "903489978389",
+    "project_id": "qr-scanner-hdt",
+    "storage_bucket": "qr-scanner-hdt.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903489978389:android:775e576a1a20304b9e0e1c",
+        "android_client_info": {
+          "package_name": "com.hdt.qrscanner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoAVgDMNE9DW_ma7LEBZgJYOS5nmCGGVU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

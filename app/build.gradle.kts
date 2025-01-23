@@ -6,6 +6,8 @@ plugins {
     id("androidx.navigation.safeargs.kotlin")
     id("com.google.gms.google-services")
     id("com.google.firebase.crashlytics")
+    id("kotlin-parcelize")
+    id("kotlin-kapt")
 }
 
 android {
@@ -53,7 +55,6 @@ android {
 
     buildFeatures {
         viewBinding = true
-        buildConfig = true
     }
 
     flavorDimensions += "app"
@@ -102,4 +103,7 @@ dependencies {
     implementation (libs.glide)
     //Lottie
     implementation(libs.lottie)
+
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.google.firebase.analytics)
 }

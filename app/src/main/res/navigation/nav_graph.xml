@@ -14,4 +14,21 @@
         android:id="@+id/homeFragment"
         android:name="com.hdt.qrscanner.ui.fragment.HomeFragment"
         tools:layout="@layout/fragment_home"/>
+
+    <fragment
+        android:id="@+id/generateFragment"
+        android:name="com.hdt.qrscanner.ui.fragment.GenerateFragment"
+        android:label="GenerateFragment"
+        tools:layout="@layout/fragment_generate" />
+
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.hdt.qrscanner.ui.fragment.HistoryFragment"
+        android:label="HistoryFragment"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.hdt.qrscanner.ui.fragment.SettingFragment"
+        android:label="SettingFragment"
+        tools:layout="@layout/fragnment_setting" />
 </navigation>

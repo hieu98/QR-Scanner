@@ -5,9 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import com.hdt.qrscanner.R
 import com.hdt.qrscanner.databinding.FragmentSplashBinding
-import com.hdt.qrscanner.util.extension.navigate
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
@@ -27,7 +27,7 @@ class SplashFragment : BaseFragment<FragmentSplashBinding>() {
 
         lifecycleScope.launch {
             delay(2000)
-            navigate(R.id.homeFragment)
+            findNavController().navigate(R.id.homeFragment)
         }
 
     }

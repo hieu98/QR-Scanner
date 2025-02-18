@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_10">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_40"
+        android:background="#333333"
+        android:paddingVertical="@dimen/dp_8"
+        android:paddingStart="@dimen/dp_12"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_50"
+        android:text="Setting"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/sp_20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_back" />
+
+    <RelativeLayout
+        android:id="@+id/rl_vibrate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_30"
+        android:background="@color/background"
+        android:paddingHorizontal="@dimen/dp_16"
+        android:paddingVertical="@dimen/dp_12"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_setting">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_vibrate"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_vibrate" />
+
+        <TextView
+            android:id="@+id/tv_title_vibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_toEndOf="@+id/iv_vibrate"
+            android:text="Vibrate"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/tv_des_vibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title_vibrate"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_toEndOf="@+id/iv_vibrate"
+            android:text="Vibration when scan is done."
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_beep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@color/background"
+        android:paddingHorizontal="@dimen/dp_16"
+        android:paddingVertical="@dimen/dp_12"
+        app:layout_constraintTop_toBottomOf="@+id/rl_vibrate">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_beep"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_beep" />
+
+        <TextView
+            android:id="@+id/tv_title_beep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_toEndOf="@+id/iv_beep"
+            android:text="Beep"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/tv_des_beep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title_beep"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_toEndOf="@+id/iv_beep"
+            android:text="Beep when scan is done."
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_title_support"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_50"
+        android:text="Support"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/sp_20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rl_beep" />
+
+    <RelativeLayout
+        android:id="@+id/rl_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_30"
+        android:background="@color/background"
+        android:paddingHorizontal="@dimen/dp_16"
+        android:paddingVertical="@dimen/dp_12"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_support">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_rate"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_rate" />
+
+        <TextView
+            android:id="@+id/tv_title_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_toEndOf="@+id/iv_rate"
+            android:text="Rate Us"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/tv_des_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title_rate"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_toEndOf="@+id/iv_rate"
+            android:text="Your best reward to us."
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_2"
+        android:background="@color/background"
+        android:paddingHorizontal="@dimen/dp_16"
+        android:paddingVertical="@dimen/dp_12"
+        app:layout_constraintTop_toBottomOf="@+id/rl_rate">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_share"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_share" />
+
+        <TextView
+            android:id="@+id/tv_title_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_toEndOf="@+id/iv_share"
+            android:text="Share"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/tv_des_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title_share"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_toEndOf="@+id/iv_share"
+            android:text="Share app with others."
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_policy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_2"
+        android:background="@color/background"
+        android:paddingHorizontal="@dimen/dp_16"
+        android:paddingVertical="@dimen/dp_12"
+        app:layout_constraintTop_toBottomOf="@+id/rl_share">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_policy"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_policy" />
+
+        <TextView
+            android:id="@+id/tv_title_policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_toEndOf="@+id/iv_policy"
+            android:text="Privacy Policy"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/tv_des_policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title_policy"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_toEndOf="@+id/iv_policy"
+            android:text="Share app with others."
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
